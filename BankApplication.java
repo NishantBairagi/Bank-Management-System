@@ -21,6 +21,10 @@ class BankApplication {
         b.displayBankDetails();
         b.displayUserDetails();
         b.displayAccountDetails();
+        System.out.println(b.deposit(2000) ? "Credited" : "Failed");
+        System.out.println("Balance after credit: " + b.checkBalance());
+        System.out.println(b.withdraw(2000) ? "withdraw" : "Failed");
+        System.out.println("Balance after withdraw: " + b.checkBalance());
         String summary = b.createAccountSummary();
         System.out.println("Account summary: " + summary);
         System.out.println("Enter minimum balance required:");
@@ -31,5 +35,6 @@ class BankApplication {
         } else {
             System.out.println("Minimum Balance is not maintained");
         }
+
     }
 }
