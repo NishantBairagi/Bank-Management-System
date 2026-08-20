@@ -25,4 +25,23 @@ class Bank {
         System.out.println("User Id: " + userId + " User Name: " + userName);
     }
 
+    void displayAccountDetails() {
+        System.out.println("Account Number: " + accountNumber);
+        System.out.println("Account Type: " + accountType);
+        System.out.println("Current Balance: " + balance);
+    }
+
+    String createAccountSummary() {
+        String accountSummary = "Bank Name: " + bankName + " User Name: " + userName + " Account Number: " + accountNumber + " Account Type: " + accountType + " Balance: " + balance;
+        return accountSummary;
+    }
+
+    boolean hasMinimumBalance(double minimumBalance) {
+        boolean result = false;
+        if (balance >= minimumBalance) {
+            result = true;
+        }
+        return result;
+    }
+
 }

@@ -21,6 +21,7 @@ class BankApplication {
         b.displayBankDetails();
         b.displayUserDetails();
         b.displayAccountDetails();
+
         String summary = b.createAccountSummary();
         System.out.println("Account summary: " + summary);
         System.out.println("Enter minimum balance required:");
@@ -31,5 +32,6 @@ class BankApplication {
         } else {
             System.out.println("Minimum Balance is not maintained");
         }
+
     }
 }
