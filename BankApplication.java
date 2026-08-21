@@ -5,8 +5,6 @@ class BankApplication {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Total number of accounts you want: ");
-        int numberOfAcounts = sc.nextInt();
         System.out.println("Enter your Bank Name");
         String bankName = sc.nextLine();
         System.out.println("Enter User Name:");

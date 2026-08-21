@@ -64,16 +64,4 @@ class Bank {
         return balance;
     }
 
-    boolean matchesAcoountNumber(long searchAccountNumber) {
-        if (this.accountNumber == searchAccountNumber) {
-            return true;
-        }
-        return false;
-    }
-
-    void displayCompleteDetails() {
-        displayAccountDetails();
-        displayUserDetails();
-        displayBankDetails();
-    }
 }
